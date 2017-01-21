@@ -14,14 +14,18 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="#">TheSlapGame</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="#" onClick="slap()"> Slap</a></li>
-      <li><a href="#" onClick="kick()">Kick</a></li>
-      <li><a href="#" onClick="punch()">Punch</a></li>
+    <ul id = "navButtons" class="nav navbar-nav">
 
-		<li><a href="#" onClick="addShield()">Add shield</a></li>
+
+		<!--<li><a href="#" onClick="addShield()">Add shield</a></li>
       	<li><a href="#" onClick="addHelmet()">Add Helmet</a></li>
-	    <li><a href="#" onClick="addGauntlets()">Add Gauntlets</a></li>
+	    <li><a href="#" onClick="addGauntlets()">Add Gauntlets</a></li>-->
+
+
+      <!--<li><a href="#" onClick="slap()"> Slap</a></li>-->
+      <!--<li><a href="#" onClick="punch()">Punch</a></li>
+      <li><a href="#" onClick="kick()">Kick</a></li>-->
+
 
     </ul>
 	</div>
@@ -30,6 +34,23 @@
 
 <span id="health">100</span>
 <span id="hits">0</span>
+
+<div class="container">
+		  <h2>Health</h2>
+  <div class="progress">
+    <div id = "healthBar" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+		  <h2>Shielding</h2>
+  <div class="progress">
+    <div id = "shieldBar" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="1" style="width:100%">
+    </div>
+  </div>
+</div>
+
 
 	<img class="target" src="target.png"></img>
 	<script src="game.js"></script>

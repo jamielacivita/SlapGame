@@ -32,9 +32,10 @@
 </nav>
 <!-- End of Header Buttons -->
 
-<span id="health">100</span>
-<span id="hits">0</span>
 
+
+
+<!--Place Health Bar-->
 <div class="container">
 		  <h2>Health</h2>
   <div class="progress">
@@ -43,13 +44,31 @@
   </div>
 </div>
 
+<!-- Place Shielding Bar-->
 <div class="container">
-		  <h2>Shielding</h2>
+		  <h2 id="txt_Shielding"></h2>
   <div class="progress">
     <div id = "shieldBar" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="1" style="width:100%">
     </div>
   </div>
 </div>
+
+<div id = "pagefooter" class="container-fluid">
+  <div class="row text-center">
+
+    <div class="col-xs-4 text-center">
+      <span id="hits">0</span>
+    </div>
+
+    <div class="col-xs-4 text-center">
+    </div>
+
+    <div class="col-xs-4 text-center">
+      <span id="health">100</span>
+    </div>
+
+  </div>
+  </div>
 
 
 	<img class="target" src="target.png"></img>
